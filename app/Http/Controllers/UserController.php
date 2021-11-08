@@ -10,12 +10,12 @@ class UserController extends Controller
     {
        
         echo '1';
-        //
+        //s
     }
     public function show($halaman)
     {
         if($halaman=="ok"){
-            echo "showwwww";
+            echo "Tampil Sesuai data";
         }
         else{
             echo "Not Found";
