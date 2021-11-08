@@ -35,5 +35,9 @@ Route::get('/about/{id} ', function (Request $request, $id) {
 
 use App\Http\Controllers\UserController; 
 Route::resource('user', UserController::class);
-
 Route::get('/user/{halaman}', [UserController::class, 'show']);
+
+//home
+use App\Http\Controllers\HomeController; 
+Route::resource('home', HomeController::class);
+Route::get('/home/{halaman}', [HomeController::class, 'show']);
